@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+  <body class="flex align-center justify-center">
+    <div class="container flex">
+      <div class="top">
+        <div class="content">
+          <div class="frame">
+            <div class="flex align-center">
+              <div class="featured-icon bolt flex align-center justify-center">
+                <i class="material-icons">bolt</i>
+              </div>
+              <div>
+                <h1>Charger #122</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+          <div class="frame">
+            <div class="flex">
+              <div><i class="material-icons">place</i></div>
+              <div>
+                <h3>Location</h3>
+                <p>
+                  Mathura Rd,National Sports Club of, Pragati Maidan, New Delhi,
+                  Delhi 110001
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+          <div class="frame">
+            <div class="flex">
+              <div><i class="material-icons hash">tag</i></div>
+              <div>
+                <h3>Chargepoint ID</h3>
+                <p id="chargerpointId">567456AD</p>
+              </div>
+            </div>
+            <div class="clipboard">
+              <i
+                class="material-icons"
+                onclick="copyToClipboard('#chargerpointId', '.tooltip-chargerpoint')"
+                >content_copy</i
+              >
+              <div class="tooltip tooltip-chargerpoint">
+                <p>Copied to Clipboard!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+          <div class="frame">
+            <div class="flex">
+              <div><i class="material-icons">link</i></div>
+              <div>
+                <h3>Chargepoint URL</h3>
+                <p id="link">54.66.66.58</p>
+              </div>
+            </div>
+            <div class="clipboard">
+              <i
+                class="material-icons"
+                onclick="copyToClipboard('#link', '.tooltip-link')"
+                >content_copy</i
+              >
+              <div class="tooltip tooltip-link">
+                <p>Copied to Clipboard!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="content">
+          <div class="frame">
+            <div class="flex">
+              <div class="featured-icon flex align-center justify-center">
+                <i class="material-icons">outlet</i>
+              </div>
+              <div>
+                <h2>Connectors (2)</h2>
+                <h3 style="font-weight: 400">Change status of connectors</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+          <div class="frame justify-between">
+            <div>
+              <h3>#1234</h3>
+              <h2>AC-001</h2>
+            </div>
+            <div class="frame status success">
+              <div class="dot"></div>
+              <h3>Operative</h3>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+          <div class="frame justify-between">
+            <div>
+              <h3>#1234</h3>
+              <h2>AC-001</h2>
+            </div>
+            <div class="frame status error">
+              <div class="dot"></div>
+              <h3>Inoperative</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
